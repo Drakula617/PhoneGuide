@@ -33,7 +33,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="phone in phones">
+                        <tr v-for="(phone, index) in phones">
                             <td>{{phone.id}}</td>
                             <td>{{phone.lname}}</td>
                             <td>{{phone.fname}}</td>
@@ -44,13 +44,13 @@
                             <td>
                                 <div>
                                 <button class="editable-element" v-on:click="editAreaVisFunc(phone)"></button>
-                                <button class="delete-button" v-on:click="openRemoveModal">X</button>
+                                <button class="delete-button" v-on:click="openRemoveModal(phone)">X</button>
                                 <div class="modal" v-if="showRemoveModal == true">
                                         <div class="modal-content">
                                             <h2>Подтверждение</h2>
                                             <p>Вы уверены, что хотите удалить запись?</p>
                                             <div class="modal-buttons">
-                                                <button id="confirm-button" v-on:click="confirmRemove(phone.id)">Да</button>
+                                            <button id="confirm-button" v-on:click="confirmRemove">Да</button>
                                                 <button id="cancel-button" v-on:click="closeRemoveModal">Отмена</button>
                                             </div>
                                         </div>

@@ -32,6 +32,7 @@
                 street_number_house: '',
                 number_apartment: ''
             },
+            idremovePhone:0,
             //Добавляемая запись
             addPhone:
             {
@@ -87,13 +88,15 @@
 
             },
             //Удаление кортежа из таблицы phones
-            removePhoneFunc: function (id_phone) {
-
-                axios.post('/Home/RemovePhone?id=' + id_phone)
+            removePhoneFunc: function () {
+                console.log(this.idremovePhone);
+                axios.post('/Home/RemovePhone?id=' + this.idremovePhone)
                     .then(response => {
                         console.log(response.data);
+                        this.getPhonesFunc();
+
                     });
-                this.phones = this.phones.filter(item => item.id !== id_phone);
+                
                 this.updateArea.visibility = false;
             },
             addAreaVisFunc: function () {
@@ -101,7 +104,7 @@
                 this.updateArea.visibility = false;
             },
             editAreaVisFunc: function (phone) {
-
+                this.getPhonesFunc();
                 this.addArea.visibility = false;
                 this.updateArea.visibility = true;
                 this.editPhone = phone;
@@ -139,19 +142,17 @@
                 // Действие после отмены
                 this.closeEditModal();
             },
-
-
-
-            openRemoveModal() {
-
+            openRemoveModal(phone) {
+                this.idremovePhone = phone.id;
                 this.showRemoveModal = true;
             },
             closeRemoveModal() {
+                idremovePhone = 0;
                 this.showRemoveModal = false;
             },
-            confirmRemove(id) {
+            confirmRemove() {
 
-                this.removePhoneFunc(id);
+                this.removePhoneFunc();
                 this.closeRemoveModal();
 
             },
