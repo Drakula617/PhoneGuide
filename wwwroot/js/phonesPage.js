@@ -70,7 +70,7 @@
 
                 axios.post('/Home/AddPhone', this.addPhone)
                     .then(response => {
-                        console.log(response.data);
+                        alert(response.data);
                         this.getPhonesFunc();
                     });
             },
