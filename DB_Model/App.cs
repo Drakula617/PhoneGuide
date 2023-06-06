@@ -12,12 +12,11 @@ namespace PhoneGuideApp.DB_Model
         public static UserContext context = new UserContext();
         public static List<T> ConvertCsvToObjects<T>(IFormFile file) where T : class
         {
-            if (file == null)
-            {
-                return null;
-            }
-            try
-            {
+            //if (file == null)
+            //{
+            //    return null;
+            //}
+
                 var config = new CsvConfiguration(CultureInfo.InvariantCulture)
                 {
                     HasHeaderRecord = true, 
@@ -32,11 +31,8 @@ namespace PhoneGuideApp.DB_Model
                     var records = csv.GetRecords<T>().ToList();
                     return records;
                 }
-            }
-            catch
-            {
-                return null;
-            }
+
+
 
         }
     }

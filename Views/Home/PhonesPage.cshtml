@@ -78,10 +78,10 @@
 
                     <input class="add-area-phone-house" type="text" v-model="addPhone.home_number_phone"
                                placeholder="Дом. номер телефона"
-                           pattern="[0-9]{7,10}" title="Формат ввода XXXXXXX" />
+                           pattern="[1-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат ввода XXX-XX-XX" />
                     <input class="add-area-phone-mobile" type="tel" v-model="addPhone.mobile_number_phone"
                                placeholder="Моб. номер телефона"
-                               pattern="\+\d{1,3}\d{10}" title="Формат ввода +XXXXXXXXXX" />
+                           pattern="\+[0-9]{1,3} [0-9]{3}-[0-9]{3}-[0-9]{4}" title="Формат ввода +XXX-XXX-XXXX" />
 
                         <h4>Адрес</h4>
                         <div>
@@ -113,10 +113,10 @@
 
                         <input class="add-area-phone-house" type="text" v-model="editPhone.home_number_phone"
                                        placeholder="Дом. номер телефона"
-                                       pattern="[0-9]{7,10}" title="Формат ввода XXXXXXX" />
+                           pattern="[1-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат ввода XXX-XX-XX" />
                         <input class="add-area-phone-mobile" type="tel" v-model="editPhone.mobile_number_phone"
                                        placeholder="Моб. номер телефона"
-                                       pattern="\+\d{1,3}\d{10}" title="Формат ввода +XXXXXXXXXX" />
+                                pattern="\+[0-9]{1,3} [0-9]{3}-[0-9]{3}-[0-9]{4}" title="Формат ввода +XXX XXX-XXX-XXXX" />
                             <h4>Адрес</h4>
                             <div>
                                 <input class="add-area-address-city" type="text" v-model="editPhone.city"
