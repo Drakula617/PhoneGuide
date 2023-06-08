@@ -1,28 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PhoneGuideApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\PhoneGuideApp.bundle.scp.css"
-    },
-    {
-      "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\css\\phonesPage.css",
-      "PackagePath": "staticwebassets\\css\\phonesPage.css"
-    },
-    {
-      "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\css\\phones_page.css",
+      "PackagePath": "staticwebassets\\css\\phones_page.css"
     },
     {
       "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\js\\phonesPage.js",
-      "PackagePath": "staticwebassets\\js\\phonesPage.js"
-    },
-    {
-      "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\js\\phones_page.js",
+      "PackagePath": "staticwebassets\\js\\phones_page.js"
     },
     {
       "Id": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\lib\\bootstrap\\LICENSE",

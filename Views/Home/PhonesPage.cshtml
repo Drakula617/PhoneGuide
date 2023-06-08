@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <link rel="stylesheet"  href="~/css/phonesPage.css"/>
+    <link rel="stylesheet" href="~/css/phones_page.css" />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         
@@ -38,8 +38,8 @@
                             <td>{{phone.lname}}</td>
                             <td>{{phone.fname}}</td>
                             <td>{{phone.mname}}</td>
-                            <td>{{phone.home_number_phone}}</td>
-                            <td>+{{phone.mobile_number_phone}}</td>
+                            <td>{{phone.homeNumberPhone}}</td>
+                            <td>+{{phone.mobileNumberPhone}}</td>
                             <td>{{phone.addressStr}}</td>
                             <td>
                                 <div>
@@ -76,10 +76,10 @@
                            v-model="addPhone.mname" required pattern="[A-Za-zА-Яа-яЁё]+"
                                title="Отчество может содержать только буквы" />
 
-                    <input class="add-area-phone-house" type="text" v-model="addPhone.home_number_phone"
+                    <input class="add-area-phone-house" type="text" v-model="addPhone.homeNumberPhone"
                                placeholder="Дом. номер телефона"
                            pattern="[1-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат ввода XXX-XX-XX" />
-                    <input class="add-area-phone-mobile" type="tel" v-model="addPhone.mobile_number_phone"
+                    <input class="add-area-phone-mobile" type="tel" v-model="addPhone.mobileNumberPhone"
                                placeholder="Моб. номер телефона"
                            pattern="[0-9]{1,3} [0-9]{3}-[0-9]{3}-[0-9]{4}" title="Формат ввода X XXX-XXX-XXXX" />
 
@@ -88,8 +88,8 @@
                             <input class="add-area-address-city" type="text" v-model="addPhone.city"
                                    placeholder="Город"
                                    required pattern="[A-Za-zА-Яа-яЁё]+" title="Название города может содержать только буквы" />
-                            <input class="add-area-address-street" type="text" v-model="addPhone.street_number_house" placeholder="Улица" />
-                            <input class="add-area-address-apart" type="text" v-model="addPhone.number_apartment" placeholder="Номер квартиры" />
+                            <input class="add-area-address-street" type="text" v-model="addPhone.streetNumberHouse" placeholder="Улица" />
+                            <input class="add-area-address-apart" type="text" v-model="addPhone.numberApartment" placeholder="Номер квартиры" />
                         </div>
 
 
@@ -111,7 +111,7 @@
                            v-model="editPhone.mname" required pattern="[A-Za-zА-Яа-яЁё]+"
                                    title="Отчество может содержать только буквы" />
 
-                        <input class="add-area-phone-house" type="text" v-model="editPhone.home_number_phone"
+                        <input class="add-area-phone-house" type="text" v-model="editPhone.homeNumberPhone"
                                        placeholder="Дом. номер телефона"
                            pattern="[1-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат ввода XXX-XX-XX" />
                         <input class="add-area-phone-mobile" type="tel" v-model="editPhone.mobile_number_phone"
@@ -122,8 +122,8 @@
                                 <input class="add-area-address-city" type="text" v-model="editPhone.city"
                                        placeholder="Город"
                                        required pattern="[A-Za-zА-Яа-яЁё]+" title="Название города может содержать только буквы" />
-                                <input class="add-area-address-street" type="text" v-model="editPhone.street_number_house" placeholder="Улица" />
-                                <input class="add-area-address-apart" type="text" v-model="editPhone.number_apartment" placeholder="Номер квартиры" />
+                                <input class="add-area-address-street" type="text" v-model="editPhone.streetNumberHouse" placeholder="Улица" />
+                                <input class="add-area-address-apart" type="text" v-model="editPhone.numberApartment" placeholder="Номер квартиры" />
                             </div>
 
 
@@ -145,7 +145,7 @@
 
     </div>
 
-     <script type="text/javascript" src="/js/phonesPage.js"></script>
+    <script type="text/javascript" src="/js/phones_page.js"></script>
     </body>
 </html>
 

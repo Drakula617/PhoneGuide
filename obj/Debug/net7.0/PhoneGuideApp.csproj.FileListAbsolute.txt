@@ -55,9 +55,7 @@ C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\staticwebassets\msbui
 C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\scopedcss\bundle\PhoneGuideApp.styles.css
-C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\scopedcss\projectbundle\PhoneGuideApp.bundle.scp.css
 C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\PhoneGuideApp.csproj.CopyComplete
 C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\PhoneGuideApp.dll
 C:\Users\gidin\source\repos\PhoneGuideApp\obj\Debug\net7.0\refint\PhoneGuideApp.dll
@@ -69,3 +67,13 @@ C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\Microsoft.AspNetCore.
 C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\CsvHelper.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gidin\source\repos\PhoneGuideApp\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll

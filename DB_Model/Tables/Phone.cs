@@ -34,13 +34,13 @@ namespace PhoneGuideApp.DB_Model.Tables
         /// <summary>
         /// Номер домашнего телефона
         /// </summary>
-        [TypeConverter(typeof(StringConverter))]
-        public string Home_number_phone { get; set; }
+        
+        public string HomeNumberPhone { get; set; }
         /// <summary>
         /// Номер мобильного телефона
         /// </summary>
-        [TypeConverter(typeof(StringConverter))]
-        public string Mobile_number_phone { get; set; }
+        
+        public string MobileNumberPhone { get; set; }
 
         /// <summary>
         /// Город
@@ -49,11 +49,11 @@ namespace PhoneGuideApp.DB_Model.Tables
         /// <summary>
         /// Улица и номер дома
         /// </summary>
-        public string Street_number_house { get; set; }
+        public string StreetNumberHouse { get; set; }
         /// <summary>
         /// Номер квартиры
         /// </summary>
-        public string Number_apartment { get; set; }
+        public string NumberApartment { get; set; }
 
         /// <summary>
         /// Полный адрес
@@ -69,13 +69,13 @@ namespace PhoneGuideApp.DB_Model.Tables
                 {
                     str +=$"г. {City}";
                 }
-                if (Street_number_house != null)
+                if (StreetNumberHouse != null)
                 {
-                    str += $", Ул.{Street_number_house}";
+                    str += $", Ул.{StreetNumberHouse}";
                 }
-                if (Number_apartment != null)
+                if (NumberApartment != null)
                 {
-                    str += $", кв.{Number_apartment}";
+                    str += $", кв.{NumberApartment}";
                 }
                 
                 return str.Trim();

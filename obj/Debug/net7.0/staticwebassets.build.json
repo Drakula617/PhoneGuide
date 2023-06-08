@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AaUo42psCRIABcPeRxy4iPEjLQTLe6B7RXUoQznFRso=",
+  "Hash": "eHmTTnmiH88ODT+BauMPAtrq8hPgZiW0vkp2xy6lsvI=",
   "Source": "PhoneGuideApp",
   "BasePath": "_content/PhoneGuideApp",
   "Mode": "Default",
@@ -17,46 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PhoneGuideApp.styles.css",
-      "SourceId": "PhoneGuideApp",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/PhoneGuideApp",
-      "RelativePath": "PhoneGuideApp.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PhoneGuideApp.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PhoneGuideApp.bundle.scp.css",
-      "SourceId": "PhoneGuideApp",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/PhoneGuideApp",
-      "RelativePath": "PhoneGuideApp.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PhoneGuideApp.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\css\\phonesPage.css",
+      "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\css\\phones_page.css",
       "SourceId": "PhoneGuideApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\",
       "BasePath": "_content/PhoneGuideApp",
-      "RelativePath": "css/phonesPage.css",
+      "RelativePath": "css/phones_page.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,24 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\phonesPage.css"
-    },
-    {
-      "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\css\\site.css",
-      "SourceId": "PhoneGuideApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\",
-      "BasePath": "_content/PhoneGuideApp",
-      "RelativePath": "css/site.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\phones_page.css"
     },
     {
       "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\favicon.ico",
@@ -102,12 +51,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\js\\phonesPage.js",
+      "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\js\\phones_page.js",
       "SourceId": "PhoneGuideApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\",
       "BasePath": "_content/PhoneGuideApp",
-      "RelativePath": "js/phonesPage.js",
+      "RelativePath": "js/phones_page.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,24 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\phonesPage.js"
-    },
-    {
-      "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\js\\site.js",
-      "SourceId": "PhoneGuideApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\",
-      "BasePath": "_content/PhoneGuideApp",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\js\\phones_page.js"
     },
     {
       "Identity": "C:\\Users\\gidin\\source\\repos\\PhoneGuideApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

@@ -8,8 +8,6 @@ namespace PhoneGuideApp.DB_Model
 {
     public static class App
     {
-        public static PhoneGuideDBEntities db = new PhoneGuideDBEntities();
-        public static UserContext context = new UserContext();
         public static List<T> ConvertCsvToObjects<T>(IFormFile file) where T : class
         {
             //if (file == null)

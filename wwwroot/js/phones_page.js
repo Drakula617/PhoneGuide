@@ -26,11 +26,11 @@
                 fname: '',
                 lname: '',
                 mname: '',
-                home_number_phone: '',
-                mobile_number_phone: '',
+                homeNumberPhone: '',
+                mobileNumberPhone: '',
                 city: '',
-                street_number_house: '',
-                number_apartment: ''
+                streetNumberHouse: '',
+                numberApartment: ''
             },
             idremovePhone:0,
             //Добавляемая запись
@@ -39,11 +39,11 @@
                 fname: '',
                 lname: '',
                 mname: '',
-                home_number_phone: '',
-                mobile_number_phone: '',
+                homeNumberPhone: '',
+                mobileNumberPhone: '',
                 city: '',
-                street_number_house: '',
-                number_apartment: ''
+                streetNumberHouse: '',
+                numberApartment: ''
 
             },
             //Модальное окно на редактирование
@@ -55,12 +55,12 @@
         mounted() {
             this.addArea.visibility = false;
             this.updateArea.visibility = false;
-            this.getPhonesFunc();
+            this.getPhones();
         },
         methods:
         {
             //Получние коллекции phones
-            getPhonesFunc: function () {
+            getPhones: function () {
                 axios.get(this.url.phones).then((response) => {
                     this.phones = response.data;
                 });
@@ -71,7 +71,7 @@
                 axios.post('/Home/AddPhone', this.addPhone)
                     .then(response => {
                         alert(response.data);
-                        this.getPhonesFunc();
+                        this.getPhones();
                     });
             },
             //Экспорт данных в CSV файл
@@ -83,17 +83,17 @@
                 axios.post('/Home/EditPhone', this.editPhone)
                     .then(response => {
                         console.log(response.data);
-                        this.getPhonesFunc();
+                        this.getPhones();
                     });
 
             },
             //Удаление кортежа из таблицы phones
-            removePhoneFunc: function () {
+            removePhone: function () {
                 console.log(this.idremovePhone);
                 axios.post('/Home/RemovePhone?id=' + this.idremovePhone)
                     .then(response => {
                         console.log(response.data);
-                        this.getPhonesFunc();
+                        this.getPhones();
 
                     });
                 
@@ -104,7 +104,7 @@
                 this.updateArea.visibility = false;
             },
             editAreaVisFunc: function (phone) {
-                this.getPhonesFunc();
+                this.getPhones();
                 this.addArea.visibility = false;
                 this.updateArea.visibility = true;
                 this.editPhone = phone;
@@ -120,7 +120,7 @@
                 axios.post('/Home/ImportPhonesFromCSV', formData)
                     .then(responce => {
                         console.log(responce.data);
-                        this.getPhonesFunc();
+                        this.getPhones();
 
                     });
 
@@ -152,7 +152,7 @@
             },
             confirmRemove() {
 
-                this.removePhoneFunc();
+                this.removePhone();
                 this.closeRemoveModal();
 
             },

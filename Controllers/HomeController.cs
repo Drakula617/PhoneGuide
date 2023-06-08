@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Newtonsoft.Json;
 using System.Text;
 using CsvHelper;
+using PhoneGuideApp.Interfaces;
 
 namespace PhoneGuideApp.Controllers
 {
@@ -15,11 +16,14 @@ namespace PhoneGuideApp.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        readonly IUserContext _userContext;
+        readonly IPhoneGuideDBEntities _phoneGuideDBEntities;
+        public HomeController(ILogger<HomeController> logger, IUserContext userContext, IPhoneGuideDBEntities phoneGuideDBEntities)
         {
             _logger = logger;
+            _userContext = userContext;
+            _phoneGuideDBEntities = phoneGuideDBEntities;
         }
-
 
         /// <summary>
         /// Загрузка страницы
@@ -27,7 +31,7 @@ namespace PhoneGuideApp.Controllers
         /// <returns></returns>
         public IActionResult PhonesPage()
         {
-            return View(App.context);
+            return View();
         }
 
         /// <summary>
@@ -36,7 +40,7 @@ namespace PhoneGuideApp.Controllers
         /// <returns></returns>
         public IActionResult GetPhones()
         {
-            return Json(App.context.GetData());
+            return Json(_phoneGuideDBEntities.GetPhones());
         }
 
         /// <summary>
@@ -46,7 +50,7 @@ namespace PhoneGuideApp.Controllers
         /// <returns></returns>
         public IActionResult AddPhone([FromBody] Phone newphone) 
         {
-            return Content(App.context.AddPhone(newphone));
+            return Content(_phoneGuideDBEntities.AddPhone(newphone));
         }
 
         /// <summary>
@@ -56,7 +60,7 @@ namespace PhoneGuideApp.Controllers
         /// <returns></returns>
         public IActionResult EditPhone([FromBody] Phone editphone)
         {
-             App.context.EditPhone(editphone);
+            _phoneGuideDBEntities.EditPhone(editphone);
              return Content("Изменения сохранены");
         }
 
@@ -67,7 +71,7 @@ namespace PhoneGuideApp.Controllers
         /// <returns></returns>
         public IActionResult RemovePhone(int id) 
         {
-            return Content(App.context.RemovePhone(id));
+            return Content(_phoneGuideDBEntities.RemovePhone(id));
         }
 
         /// <summary>
@@ -76,7 +80,7 @@ namespace PhoneGuideApp.Controllers
         /// <returns></returns>
         public IActionResult ExportPhonesToCSV()
         {
-            return File(App.context.ExportPhonesToCsv(), "text/csv",fileDownloadName:$"Phones-{DateTime.Now.ToString("g")}.csv");
+            return File(_userContext.ExportPhonesToCsv(), "text/csv",fileDownloadName:$"Phones-{DateTime.Now.ToString("g")}.csv");
         }
 
         /// <summary>
@@ -87,7 +91,7 @@ namespace PhoneGuideApp.Controllers
         public IActionResult ImportPhonesFromCSV([FromForm]IFormFile file)
         {
             var list = App.ConvertCsvToObjects<Phone>(file);
-            return Content(App.context.ImportCSVPhones(list));
+            return Content(_userContext.ImportCSVPhones(list));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

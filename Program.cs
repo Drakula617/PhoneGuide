@@ -1,15 +1,22 @@
+using Microsoft.Data.Sqlite;
+using Microsoft.Extensions.DependencyInjection;
 using PhoneGuideApp.DB_Model;
+using PhoneGuideApp.Interfaces;
 using System.Data.Common;
+using Microsoft.Extensions.Configuration;
+using System.Configuration;
+using PhoneGuideApp;
 
-
-App.db = new PhoneGuideDBEntities();
-App.context = new UserContext();
 var builder = WebApplication.CreateBuilder(args);
+
+var startup = new Startup(builder.Configuration);
+startup.ConfigureServices(builder.Services);
+
+var app = builder.Build();
+startup.Configure(app, builder.Environment);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -30,5 +37,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=PhonesPage}/{id?}");
+
 
 app.Run();
