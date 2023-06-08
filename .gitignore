@@ -14,3 +14,68 @@
 # Игнорировать файлы конфигурации
 appsettings.json
 web.config
+
+# Build output
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userprefs
+*.vscode
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+
+# NuGet packages
+*.nuget.cache
+*.dll
+*.exe
+*.pdb
+*.dll.config
+
+# Node.js dependencies
+node_modules/
+
+# .NET Core
+*.dotnet/
+*.dotnet-*
+
+# Tools
+_ReSharper*/
+*.resharper*
+*.dotCover
+*.opensharp
+
+# Test Results
+[Tt]est[Rr]esult*/
+
+# SQLite database file
+*.sqlite
+
+# macOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs and analytics files
+*.log
+*.analytics
+
+# Miscellaneous
+Thumbs.db
+Desktop.ini
