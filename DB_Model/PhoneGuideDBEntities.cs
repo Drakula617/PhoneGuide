@@ -20,8 +20,9 @@ namespace PhoneGuideApp.DB_Model
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Используем "Ленивую подгрузку" данных
-            optionsBuilder.UseLazyLoadingProxies().UseSqlite("Data Source=phones.db;");
             
+            optionsBuilder.UseLazyLoadingProxies().UseSqlite("Data Source=phones.db;");
+
         }
 
         /// <summary>
